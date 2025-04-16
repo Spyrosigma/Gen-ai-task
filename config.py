@@ -1,0 +1,18 @@
+from dotenv import load_dotenv
+load_dotenv()
+import os
+
+
+LOCAL_FILE_INPUT_DIR=os.getenv("LOCAL_FILE_INPUT_DIR")
+LOCAL_FILE_OUTPUT_DIR=os.getenv("LOCAL_FILE_OUTPUT_DIR")
+
+LLAMAPARSE_API_KEY=os.getenv("LLAMAPARSE_API_KEY")
+
+WEAVIATE_REST_URL=os.getenv("WEAVIATE_REST_URL")
+WEAVIATE_API_KEY=os.getenv("WEAVIATE_API_KEY")
+WEAVIATE_COLLECTION_NAME=os.getenv("WEAVIATE_COLLECTION_NAME")
+
+GROQ_API_KEY=os.getenv("GROQ_API_KEY")
+
+TOP_K = os.getenv("TOP_K", 2)
+
